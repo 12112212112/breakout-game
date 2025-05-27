@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breakout Game</title>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen" class="overlay">
+    <h1>🎮 Breakout Game</h1>
+    <p>إعداد وتطوير: محمد إبراهيم أبو العز</p>
+    <button onclick="startGame()">ابدأ اللعبة</button>
+  </div>
+
+  <div id="endScreen" class="overlay" style="display:none;">
+    <h1 id="endMessage"></h1>
+    <p>المستوى: <span id="finalLevel"></span></p>
+    <p>إعداد وتطوير: محمد إبراهيم أبو العز</p>
+    <button onclick="reloadGame()">🔁 إعادة اللعب</button>
+  </div>
+
+  <canvas id="breakout" width="480" height="320"></canvas>
+
+<!-- إعلان AdSense -->
+<div style="margin-top: 10px; text-align: center;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
